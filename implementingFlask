@@ -1,0 +1,25 @@
+from flask import Flask, request, render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+@app.route('/', methods=['POST','GET'])
+def submit_form():
+    budget = request.form['budget']
+    event_theme = request.form['Event_Theme']
+    num_people = request.form['num_people']
+    cuisine = request.form['Cuisine']
+    genre = request.form['Genre']
+    dress_type = request.form['Dress_Type']
+    tier = request.form['Tier']
+
+    print(budget, event_theme, num_people, cuisine, genre,dress_type, tier)
+    return render_template("index.html")
+
+    return 'Form submitted successfully!'
+
+if __name__ == '__main__':
+    app.run(debug=True)

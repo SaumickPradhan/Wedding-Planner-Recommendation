@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Budget Input Page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <p id="extra_space"></p>
+        
+        <label for="budget">What is the budget for your wedding? $
+        <input type="number" id="budget" name="budget" min="0" oninput="if(validity.valid){this.placeholder=''}else{this.placeholder='Please enter a valid value'; this.value=''}"></label>
+        
+        <br>
+
+        <label for="Event_Theme">What should be the theme of your wedding?&nbsp;&nbsp;
+            <select name="Event_Theme" id="Event_Theme">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="Royal">Royal</option>
+                <option value="Urban">Urban</option>
+                <option value="Garden">Garden</option>
+                <option value="Glamorous">Glamorous</option>
+                <option value="Classic">Classic</option>
+            </select>
+        </label>
+        
+        <br>
+
+        <label for="num_people">How many people will attend your wedding?&nbsp;&nbsp;
+            <select name="num_people" id="num_people">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="lessthan50">Less than 50</option>
+                <option value="50to200">50 - 200</option>
+                <option value="morethan200">More than 200</option>
+            </select>
+        </label>
+        
+        <br>
+
+        <label for="Cuisine">What type of food would you like to be catered?&nbsp;&nbsp;
+            <select name="Cuisine" id="Cuisine">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="Continental">Continental</option>
+                <option value="Local">Local</option>
+            </select>
+        </label>
+        
+        <br>
+
+        <label for="Genre">What genre of music band would you like?&nbsp;&nbsp;
+            <select name="Genre" id="Genre">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="Pop">Pop</option>
+                <option value="Country">Country</option>
+                <option value="Jazz">Jazz</option>
+                <option value="Rock">Rock</option>
+                <option value="Classical">Classical</option>
+            </select>
+        </label>
+        
+        <br>
+
+        <label for="Dress_Type">What type of wedding dress would you like?&nbsp;&nbsp;
+            <select name="Dress_Type" id="Dress_Type">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="Romantic">Romantic</option>
+                <option value="Classic">Classic</option>
+                <option value="Non-Traditional">Non-Traditional</option>
+                <option value="Modern">Modern</option>
+                <option value="Glamorous">Glamorous</option>
+                <option value="Boho">Boho</option>
+            </select>
+        </label>
+        
+        <br>
+
+        <label for="Tier">How many tiered cake would you like?&nbsp;&nbsp;
+            <select name="Tier" id="Tier">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="One">1</option>
+                <option value="Two">2</option>
+                <option value="Three">3</option>
+                <option value="Four">4</option>
+                <option value="Five">5</option>
+            </select>
+        </label>
+        
+        <br>
+
+        <div id="container">
+            <button class="learn-more" onclick="location.href='../Analyzing_Page/index.html'">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Submit</span>
+            </button>
+        </div>
+    </body>
+</html>
