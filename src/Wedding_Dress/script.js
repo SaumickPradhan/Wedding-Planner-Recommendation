@@ -1,0 +1,1 @@
+var Dress_Type = document.getElementById('Dress_Type').value;

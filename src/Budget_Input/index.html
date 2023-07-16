@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Budget Input Page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <p id="extra_space"></p>
+        
+        <label for="budget">What is the budget for your wedding? $
+        <input type="number" id="budget" name="budget" min="0" oninput="if(validity.valid){this.placeholder=''}else{this.placeholder='Please enter a valid value'; this.value=''}"></label>
+
+        <br>
+
+        <div id="container">
+            <button class="learn-more" onclick="location.href='../Event_Location_Input/index.html'">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Next</span>
+            </button>
+        </div>
+    </body>
+</html>

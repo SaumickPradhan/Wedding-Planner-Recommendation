@@ -1,0 +1,194 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  min-width: 100%;
+  min-height: 100%;
+  background-image: url('../images/96977.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#extra_space {
+  margin-top: 15%;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  font-family: 'Jost';
+  font-size: 30px;
+}
+
+p {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  font-family: 'Jost';
+  font-size: 60px;
+}  
+
+#Event_Theme, #num_people {
+  width: auto;
+  height: auto;
+  font-family: 'Jost';
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f3f8fa;
+  --white: #fff;
+  --black: #282936;
+  --gold: #FFD700;
+  --circle-bg: var(--black);
+  --icon-bg: var(--gold);
+  --button-text-color: var(--black);
+  --icon-arrow-bg: none;
+  --transition-duration: 0.45s;
+  --transition-ease: cubic-bezier(0.65,0,.076,1);
+}
+
+:root {
+  font-size: 20px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  font-family: 'Jost';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  margin: auto;
+  display: flex;
+  width: 8rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: var(--circle-bg);
+  border-radius: 1.625rem;
+  transition: all var(--transition-duration) var(--transition-ease);
+}
+
+button.learn-more .circle .icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: var(--icon-bg);
+  transition: all var(--transition-duration) var(--transition-ease);
+}
+
+button.learn-more .circle .icon.arrow {
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: var(--icon-arrow-bg);
+  transition: all var(--transition-duration) var(--transition-ease);
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid var(--white);
+  border-right: 0.125rem solid var(--white);
+  transform: rotate(45deg);
+}
+
+button.learn-more .circle .icon.arrow::after {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid var(--gold);
+  border-right: 0.125rem solid var(--gold);
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: var(--button-text-color);
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all var(--transition-duration) var(--transition-ease);
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: var(--icon-bg);
+  transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: var(--gold);
+}
+
+@media (display: grid) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.625rem;
+    grid-template-areas: ". main main ." ". main main .";
+  }
+    
+  #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
+}

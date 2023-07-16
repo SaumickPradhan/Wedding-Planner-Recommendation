@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Location Input Page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <p id="extra_space"></p>
+        
+        <label for="Event_Theme">What should be the theme of your wedding?&nbsp;&nbsp;
+        <select name="Event_Theme" id="Event_Theme">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="Royal">Royal</option>
+            <option value="Urban">Urban</option>
+            <option value="Garden">Garden</option>
+            <option value="Glamorous">Glamorous</option>
+            <option value="Classic">Classic</option>
+        </select></label>
+
+        <label for="num_people">How many people will attend your wedding?&nbsp;&nbsp;
+        <select name="num_people" id="num_people">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="lessthan50">Less than 50</option>
+            <option value="50to200">50 - 200</option>
+            <option value="morethan200">More than 200</option>
+        </select></label>
+
+        <br>
+
+        <div id="container">
+            <button class="learn-more" onclick="location.href='../Food_Catering/index.html'">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Next</span>
+            </button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+var budget = document.getElementById('budget').value;

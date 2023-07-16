@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Food Catering Input Page</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <p id="extra_space"></p>
+
+        <label for="Cuisine">What type of food would you like to be catered?&nbsp;&nbsp;
+        <select name="Cuisine" id="Cuisine">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="Continental">Continental</option>
+            <option value="Local">Local</option>
+        </select></label>
+
+        <!-- <br>
+        <label for="Catering_Style">What style of catering would you like to be see in your wedding?</label>
+        <select name="Catering_Style" id="Catering_Style">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="Cocktail">Cocktail Style Catering</option>
+            <option value="Buffet">Buffet Style Catering</option>
+            <option value="Food Stations">Food Stations</option>
+            <option value="Plated Dining Service">Plated Dining Service</option>
+        </select> -->
+
+        <label for="Dietary_resctriction">What style of catering would you like to be see?&nbsp;&nbsp;
+        <select name="Dietary_resctriction" id="Dietary_resctriction">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="Vegan">Vegan</option>
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="Non-Vegitarian">Non-Vegetarian</option>
+        </select></label>
+
+        <br>
+
+        <div id="container">
+            <button class="learn-more" onclick="location.href='../Music_Selection/index.html'">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Next</span>
+            </button>
+        </div>
+    </body>
+</html>
